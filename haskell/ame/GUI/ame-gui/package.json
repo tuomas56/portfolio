@@ -1,0 +1,29 @@
+{
+  "name": "ame-gui",
+  "version": "1.0.0",
+  "description": "An Electron based front-end to ame-repl",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "repository": "",
+  "author": "Tuomas Laakkonen",
+  "license": "All Rights Reserved",
+  "devDependencies": {
+    "electron": "^1.7.13",
+    "electron-builder": "^20.8.1",
+    "yarn": "^1.5.1"
+  },
+  "dependencies": {
+    "zeromq": "^4.6.0"
+  },
+  "build": {
+    "appId": "ame.gui",
+    "productName": "AME",
+    "mac": {
+      "category": "maths"
+    }
+  }
+}

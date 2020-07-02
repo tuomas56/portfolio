@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8BA54D9D1F26A67600965DED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA54D9C1F26A67600965DED /* AppDelegate.swift */; };
+		8BA54D9F1F26A67600965DED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA54D9E1F26A67600965DED /* ViewController.swift */; };
+		8BA54DA11F26A67600965DED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BA54DA01F26A67600965DED /* Assets.xcassets */; };
+		8BA54DA41F26A67600965DED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BA54DA21F26A67600965DED /* Main.storyboard */; };
+		8BA54DAF1F26A67600965DED /* Time_Zone_ClockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA54DAE1F26A67600965DED /* Time_Zone_ClockTests.swift */; };
+		8BA54DBA1F26A67600965DED /* Time_Zone_ClockUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA54DB91F26A67600965DED /* Time_Zone_ClockUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8BA54DAB1F26A67600965DED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8BA54D911F26A67600965DED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8BA54D981F26A67600965DED;
+			remoteInfo = "Time Zone Clock";
+		};
+		8BA54DB61F26A67600965DED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8BA54D911F26A67600965DED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8BA54D981F26A67600965DED;
+			remoteInfo = "Time Zone Clock";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8BA54D991F26A67600965DED /* Time Zone Clock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Time Zone Clock.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BA54D9C1F26A67600965DED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8BA54D9E1F26A67600965DED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8BA54DA01F26A67600965DED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8BA54DA31F26A67600965DED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8BA54DA51F26A67600965DED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BA54DAA1F26A67600965DED /* Time Zone ClockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Time Zone ClockTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BA54DAE1F26A67600965DED /* Time_Zone_ClockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time_Zone_ClockTests.swift; sourceTree = "<group>"; };
+		8BA54DB01F26A67600965DED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BA54DB51F26A67600965DED /* Time Zone ClockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Time Zone ClockUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BA54DB91F26A67600965DED /* Time_Zone_ClockUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time_Zone_ClockUITests.swift; sourceTree = "<group>"; };
+		8BA54DBB1F26A67600965DED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8BA54D961F26A67600965DED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BA54DA71F26A67600965DED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BA54DB21F26A67600965DED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8BA54D901F26A67600965DED = {
+			isa = PBXGroup;
+			children = (
+				8BA54D9B1F26A67600965DED /* Time Zone Clock */,
+				8BA54DAD1F26A67600965DED /* Time Zone ClockTests */,
+				8BA54DB81F26A67600965DED /* Time Zone ClockUITests */,
+				8BA54D9A1F26A67600965DED /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8BA54D9A1F26A67600965DED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8BA54D991F26A67600965DED /* Time Zone Clock.app */,
+				8BA54DAA1F26A67600965DED /* Time Zone ClockTests.xctest */,
+				8BA54DB51F26A67600965DED /* Time Zone ClockUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8BA54D9B1F26A67600965DED /* Time Zone Clock */ = {
+			isa = PBXGroup;
+			children = (
+				8BA54D9C1F26A67600965DED /* AppDelegate.swift */,
+				8BA54D9E1F26A67600965DED /* ViewController.swift */,
+				8BA54DA01F26A67600965DED /* Assets.xcassets */,
+				8BA54DA21F26A67600965DED /* Main.storyboard */,
+				8BA54DA51F26A67600965DED /* Info.plist */,
+			);
+			path = "Time Zone Clock";
+			sourceTree = "<group>";
+		};
+		8BA54DAD1F26A67600965DED /* Time Zone ClockTests */ = {
+			isa = PBXGroup;
+			children = (
+				8BA54DAE1F26A67600965DED /* Time_Zone_ClockTests.swift */,
+				8BA54DB01F26A67600965DED /* Info.plist */,
+			);
+			path = "Time Zone ClockTests";
+			sourceTree = "<group>";
+		};
+		8BA54DB81F26A67600965DED /* Time Zone ClockUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8BA54DB91F26A67600965DED /* Time_Zone_ClockUITests.swift */,
+				8BA54DBB1F26A67600965DED /* Info.plist */,
+			);
+			path = "Time Zone ClockUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8BA54D981F26A67600965DED /* Time Zone Clock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BA54DBE1F26A67600965DED /* Build configuration list for PBXNativeTarget "Time Zone Clock" */;
+			buildPhases = (
+				8BA54D951F26A67600965DED /* Sources */,
+				8BA54D961F26A67600965DED /* Frameworks */,
+				8BA54D971F26A67600965DED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Time Zone Clock";
+			productName = "Time Zone Clock";
+			productReference = 8BA54D991F26A67600965DED /* Time Zone Clock.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8BA54DA91F26A67600965DED /* Time Zone ClockTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BA54DC11F26A67600965DED /* Build configuration list for PBXNativeTarget "Time Zone ClockTests" */;
+			buildPhases = (
+				8BA54DA61F26A67600965DED /* Sources */,
+				8BA54DA71F26A67600965DED /* Frameworks */,
+				8BA54DA81F26A67600965DED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8BA54DAC1F26A67600965DED /* PBXTargetDependency */,
+			);
+			name = "Time Zone ClockTests";
+			productName = "Time Zone ClockTests";
+			productReference = 8BA54DAA1F26A67600965DED /* Time Zone ClockTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8BA54DB41F26A67600965DED /* Time Zone ClockUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BA54DC41F26A67600965DED /* Build configuration list for PBXNativeTarget "Time Zone ClockUITests" */;
+			buildPhases = (
+				8BA54DB11F26A67600965DED /* Sources */,
+				8BA54DB21F26A67600965DED /* Frameworks */,
+				8BA54DB31F26A67600965DED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8BA54DB71F26A67600965DED /* PBXTargetDependency */,
+			);
+			name = "Time Zone ClockUITests";
+			productName = "Time Zone ClockUITests";
+			productReference = 8BA54DB51F26A67600965DED /* Time Zone ClockUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8BA54D911F26A67600965DED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Laakkonen;
+				TargetAttributes = {
+					8BA54D981F26A67600965DED = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					8BA54DA91F26A67600965DED = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8BA54D981F26A67600965DED;
+					};
+					8BA54DB41F26A67600965DED = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8BA54D981F26A67600965DED;
+					};
+				};
+			};
+			buildConfigurationList = 8BA54D941F26A67600965DED /* Build configuration list for PBXProject "Time Zone Clock" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8BA54D901F26A67600965DED;
+			productRefGroup = 8BA54D9A1F26A67600965DED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8BA54D981F26A67600965DED /* Time Zone Clock */,
+				8BA54DA91F26A67600965DED /* Time Zone ClockTests */,
+				8BA54DB41F26A67600965DED /* Time Zone ClockUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8BA54D971F26A67600965DED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BA54DA11F26A67600965DED /* Assets.xcassets in Resources */,
+				8BA54DA41F26A67600965DED /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BA54DA81F26A67600965DED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BA54DB31F26A67600965DED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8BA54D951F26A67600965DED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BA54D9F1F26A67600965DED /* ViewController.swift in Sources */,
+				8BA54D9D1F26A67600965DED /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BA54DA61F26A67600965DED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BA54DAF1F26A67600965DED /* Time_Zone_ClockTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BA54DB11F26A67600965DED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BA54DBA1F26A67600965DED /* Time_Zone_ClockUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8BA54DAC1F26A67600965DED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8BA54D981F26A67600965DED /* Time Zone Clock */;
+			targetProxy = 8BA54DAB1F26A67600965DED /* PBXContainerItemProxy */;
+		};
+		8BA54DB71F26A67600965DED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8BA54D981F26A67600965DED /* Time Zone Clock */;
+			targetProxy = 8BA54DB61F26A67600965DED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8BA54DA21F26A67600965DED /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8BA54DA31F26A67600965DED /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8BA54DBC1F26A67600965DED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8BA54DBD1F26A67600965DED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		8BA54DBF1F26A67600965DED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Time Zone Clock/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "TLT.Time-Zone-Clock";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		8BA54DC01F26A67600965DED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Time Zone Clock/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "TLT.Time-Zone-Clock";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		8BA54DC21F26A67600965DED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Time Zone ClockTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "TLT.Time-Zone-ClockTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Time Zone Clock.app/Contents/MacOS/Time Zone Clock";
+			};
+			name = Debug;
+		};
+		8BA54DC31F26A67600965DED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Time Zone ClockTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "TLT.Time-Zone-ClockTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Time Zone Clock.app/Contents/MacOS/Time Zone Clock";
+			};
+			name = Release;
+		};
+		8BA54DC51F26A67600965DED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Time Zone ClockUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "TLT.Time-Zone-ClockUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Time Zone Clock";
+			};
+			name = Debug;
+		};
+		8BA54DC61F26A67600965DED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Time Zone ClockUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "TLT.Time-Zone-ClockUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Time Zone Clock";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8BA54D941F26A67600965DED /* Build configuration list for PBXProject "Time Zone Clock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BA54DBC1F26A67600965DED /* Debug */,
+				8BA54DBD1F26A67600965DED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BA54DBE1F26A67600965DED /* Build configuration list for PBXNativeTarget "Time Zone Clock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BA54DBF1F26A67600965DED /* Debug */,
+				8BA54DC01F26A67600965DED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8BA54DC11F26A67600965DED /* Build configuration list for PBXNativeTarget "Time Zone ClockTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BA54DC21F26A67600965DED /* Debug */,
+				8BA54DC31F26A67600965DED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8BA54DC41F26A67600965DED /* Build configuration list for PBXNativeTarget "Time Zone ClockUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BA54DC51F26A67600965DED /* Debug */,
+				8BA54DC61F26A67600965DED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8BA54D911F26A67600965DED /* Project object */;
+}

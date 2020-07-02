@@ -1,0 +1,18 @@
+[package]
+name = "platformer"
+version = "0.1.0"
+authors = ["tuomas56 <pigworts2@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+serde_json = "1.0"
+nfd = "0.0.4"
+rand = "0.6"
+gilrs = "0.7"
+
+[dependencies.serde]
+version = "1.0"
+features = ["derive"]
+
+[dependencies.pixelengine]
+path = "../pixelengine"
