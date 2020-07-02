@@ -1,0 +1,103 @@
+body > .title-header {
+    display: none
+}
+
+body.pg-loaded > .title-header {
+    display: block
+}
+
+body > .inner {
+    display: none
+}
+
+body.pg-loaded > .inner {
+    display: block
+}
+
+.title-header {
+    padding-top: 150px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.fancy-select {
+    width: 10em;
+}
+
+.select2-selection {
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+    height: 100%;
+}
+
+.input-group {
+    margin-bottom: 0px !important;
+    padding-right: 10px;
+    text-align: center;
+    flex: 2;
+}
+
+.btn {
+    flex: 1;
+}
+
+.btn:first-of-type {
+    margin-right: 10px;
+}
+
+.navbar {
+    border-radius: 5px;
+    width: 80vw !important;
+    left: 10vw;
+    border: 1px solid rgba(0,0,0,.125);
+    z-index: 10;
+}
+
+.navbar.js-has-stuck:not(.js-is-sticky) {
+    animation: contract 200ms forwards;
+}
+
+.form-inline {
+    width: 100%;
+    position: relative;
+}
+
+.navbar.js-is-sticky {
+    animation: expand 200ms forwards;
+}
+
+@keyframes expand {
+    from { width: 80vw; left: 10vw; border-radius: 5px; border: 1px solid rgba(0,0,0,.125);}
+    to { width: 100vw; left: 0vw; border-radius: 0px; border: none; border-bottom: 1px solid rgba(0,0,0,.125);}
+}
+
+@keyframes contract {
+    from { width: 100vw; left: 0vw; border-radius: 0px; border: none; border-bottom: 1px solid rgba(0,0,0,.125);}
+    to { width: 80vw; left: 10vw; border-radius: 5px; border: 1px solid rgba(0,0,0,.125);}
+}
+
+.container-fluid {
+    width: 80vw;
+    padding-top: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.list-group {
+    width: 80vw;
+    z-index: 0;
+    margin-bottom: 10px;
+}
+
+.list-span {
+    line-height: 38px;
+    vertical-align: middle;
+}
+
+.loading-title {
+    color: #000;
+    position: absolute;
+    size: 40px;
+    top: calc(40% - 20px);
+    left: calc(50vw - 75px);
+}

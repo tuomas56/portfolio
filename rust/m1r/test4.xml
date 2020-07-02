@@ -1,0 +1,584 @@
+<?xml version="1.0"?>
+<Model>
+  <Description>MAPK_in_Solution</Description>
+  <NumberOfReactions>30</NumberOfReactions>
+  <NumberOfSpecies>22</NumberOfSpecies>
+  <ParametersList>
+    <Parameter>
+      <Id>Cytoplasm</Id>
+      <Expression>1</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>a1</Id>
+      <Expression>1</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>d1</Id>
+      <Expression>0.4</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k1</Id>
+      <Expression>0.1</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>a2</Id>
+      <Expression>0.5</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>d2</Id>
+      <Expression>0.5</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k2</Id>
+      <Expression>0.1</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>a3</Id>
+      <Expression>3.3</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>d3</Id>
+      <Expression>0.42</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k3</Id>
+      <Expression>0.1</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>a4</Id>
+      <Expression>10</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>d4</Id>
+      <Expression>0.8</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k4</Id>
+      <Expression>0.1</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>a5</Id>
+      <Expression>3.3</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>d5</Id>
+      <Expression>0.4</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k5</Id>
+      <Expression>0.1</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>a6</Id>
+      <Expression>10</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>d6</Id>
+      <Expression>0.8</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k6</Id>
+      <Expression>0.1</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>a7</Id>
+      <Expression>20</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>d7</Id>
+      <Expression>0.6</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k7</Id>
+      <Expression>0.1</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>a8</Id>
+      <Expression>5</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>d8</Id>
+      <Expression>0.4</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k8</Id>
+      <Expression>0.1</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>a9</Id>
+      <Expression>20</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>d9</Id>
+      <Expression>0.6</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k9</Id>
+      <Expression>0.1</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>a10</Id>
+      <Expression>5</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>d10</Id>
+      <Expression>0.4</Expression>
+    </Parameter>
+    <Parameter>
+      <Id>k10</Id>
+      <Expression>0.1</Expression>
+    </Parameter>
+  </ParametersList>
+  <ReactionsList>
+    <Reaction>
+      <Id>Reaction1</Id>
+      <Type>mass-action</Type>
+      <Rate>a1</Rate>
+      <Reactants>
+        <SpeciesReference id="RAF" stoichiometry="1"/>
+        <SpeciesReference id="RAFK" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="RAFRAFK" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>Reaction2</Id>
+      <Type>mass-action</Type>
+      <Rate>d1</Rate>
+      <Reactants>
+        <SpeciesReference id="RAFRAFK" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="RAF" stoichiometry="1"/>
+        <SpeciesReference id="RAFK" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>Reaction3</Id>
+      <Type>mass-action</Type>
+      <Rate>k1</Rate>
+      <Reactants>
+        <SpeciesReference id="RAFRAFK" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="RAFK" stoichiometry="1"/>
+        <SpeciesReference id="RAFp" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>Reaction4</Id>
+      <Type>mass-action</Type>
+      <Rate>a2</Rate>
+      <Reactants>
+        <SpeciesReference id="RAFp" stoichiometry="1"/>
+        <SpeciesReference id="RAFPH" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="RAFpRAFPH" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>Reaction5</Id>
+      <Type>mass-action</Type>
+      <Rate>d2</Rate>
+      <Reactants>
+        <SpeciesReference id="RAFpRAFPH" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="RAFp" stoichiometry="1"/>
+        <SpeciesReference id="RAFPH" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>Reaction6</Id>
+      <Type>mass-action</Type>
+      <Rate>k2</Rate>
+      <Reactants>
+        <SpeciesReference id="RAFpRAFPH" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="RAF" stoichiometry="1"/>
+        <SpeciesReference id="RAFPH" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>Reaction7</Id>
+      <Type>mass-action</Type>
+      <Rate>a3</Rate>
+      <Reactants>
+        <SpeciesReference id="MEK" stoichiometry="1"/>
+        <SpeciesReference id="RAFp" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="MEKRAFp" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>Reaction8</Id>
+      <Type>mass-action</Type>
+      <Rate>d3</Rate>
+      <Reactants>
+        <SpeciesReference id="MEKRAFp" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="MEK" stoichiometry="1"/>
+        <SpeciesReference id="RAFp" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>Reaction9</Id>
+      <Type>mass-action</Type>
+      <Rate>k3</Rate>
+      <Reactants>
+        <SpeciesReference id="MEKRAFp" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="MEKp" stoichiometry="1"/>
+        <SpeciesReference id="RAFp" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>Reaction10</Id>
+      <Type>mass-action</Type>
+      <Rate>a4</Rate>
+      <Reactants>
+        <SpeciesReference id="MEKp" stoichiometry="1"/>
+        <SpeciesReference id="MEKPH" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="MEKpMEKPH" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>Reaction11</Id>
+      <Type>mass-action</Type>
+      <Rate>d4</Rate>
+      <Reactants>
+        <SpeciesReference id="MEKpMEKPH" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="MEKp" stoichiometry="1"/>
+        <SpeciesReference id="MEKPH" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>Reaction12</Id>
+      <Type>mass-action</Type>
+      <Rate>k4</Rate>
+      <Reactants>
+        <SpeciesReference id="MEKpMEKPH" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="MEK" stoichiometry="1"/>
+        <SpeciesReference id="MEKPH" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>Reaction13</Id>
+      <Type>mass-action</Type>
+      <Rate>a5</Rate>
+      <Reactants>
+        <SpeciesReference id="MEKp" stoichiometry="1"/>
+        <SpeciesReference id="RAFp" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="MEKpRAFp" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>Reaction14</Id>
+      <Type>mass-action</Type>
+      <Rate>d5</Rate>
+      <Reactants>
+        <SpeciesReference id="MEKpRAFp" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="MEKp" stoichiometry="1"/>
+        <SpeciesReference id="RAFp" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>Reaction15</Id>
+      <Type>mass-action</Type>
+      <Rate>k5</Rate>
+      <Reactants>
+        <SpeciesReference id="MEKpRAFp" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="MEKpp" stoichiometry="1"/>
+        <SpeciesReference id="RAFp" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>Reaction16</Id>
+      <Type>mass-action</Type>
+      <Rate>a6</Rate>
+      <Reactants>
+        <SpeciesReference id="MEKPH" stoichiometry="1"/>
+        <SpeciesReference id="MEKpp" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="MEKppMEKPH" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>Reaction17</Id>
+      <Type>mass-action</Type>
+      <Rate>d6</Rate>
+      <Reactants>
+        <SpeciesReference id="MEKppMEKPH" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="MEKPH" stoichiometry="1"/>
+        <SpeciesReference id="MEKpp" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>Reaction18</Id>
+      <Type>mass-action</Type>
+      <Rate>k6</Rate>
+      <Reactants>
+        <SpeciesReference id="MEKppMEKPH" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="MEKp" stoichiometry="1"/>
+        <SpeciesReference id="MEKPH" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>Reaction19</Id>
+      <Type>mass-action</Type>
+      <Rate>a7</Rate>
+      <Reactants>
+        <SpeciesReference id="MAPK" stoichiometry="1"/>
+        <SpeciesReference id="MEKpp" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="MAPKMEKpp" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>Reaction20</Id>
+      <Type>mass-action</Type>
+      <Rate>d7</Rate>
+      <Reactants>
+        <SpeciesReference id="MAPKMEKpp" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="MAPK" stoichiometry="1"/>
+        <SpeciesReference id="MEKpp" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>Reaction21</Id>
+      <Type>mass-action</Type>
+      <Rate>k7</Rate>
+      <Reactants>
+        <SpeciesReference id="MAPKMEKpp" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="MAPKp" stoichiometry="1"/>
+        <SpeciesReference id="MEKpp" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>Reaction22</Id>
+      <Type>mass-action</Type>
+      <Rate>a8</Rate>
+      <Reactants>
+        <SpeciesReference id="MAPKp" stoichiometry="1"/>
+        <SpeciesReference id="MAPKPH" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="MAPKpMAPKPH" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>Reaction23</Id>
+      <Type>mass-action</Type>
+      <Rate>d8</Rate>
+      <Reactants>
+        <SpeciesReference id="MAPKpMAPKPH" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="MAPKp" stoichiometry="1"/>
+        <SpeciesReference id="MAPKPH" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>Reaction24</Id>
+      <Type>mass-action</Type>
+      <Rate>k8</Rate>
+      <Reactants>
+        <SpeciesReference id="MAPKpMAPKPH" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="MAPK" stoichiometry="1"/>
+        <SpeciesReference id="MAPKPH" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>Reaction25</Id>
+      <Type>mass-action</Type>
+      <Rate>a9</Rate>
+      <Reactants>
+        <SpeciesReference id="MAPKp" stoichiometry="1"/>
+        <SpeciesReference id="MEKpp" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="MAPKpMEKpp" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>Reaction26</Id>
+      <Type>mass-action</Type>
+      <Rate>d9</Rate>
+      <Reactants>
+        <SpeciesReference id="MAPKpMEKpp" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="MAPKp" stoichiometry="1"/>
+        <SpeciesReference id="MEKpp" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>Reaction27</Id>
+      <Type>mass-action</Type>
+      <Rate>k9</Rate>
+      <Reactants>
+        <SpeciesReference id="MAPKpMEKpp" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="MAPKpp" stoichiometry="1"/>
+        <SpeciesReference id="MEKpp" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>Reaction28</Id>
+      <Type>mass-action</Type>
+      <Rate>a10</Rate>
+      <Reactants>
+        <SpeciesReference id="MAPKPH" stoichiometry="1"/>
+        <SpeciesReference id="MAPKpp" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="MAPKppMAPKPH" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>Reaction29</Id>
+      <Type>mass-action</Type>
+      <Rate>d10</Rate>
+      <Reactants>
+        <SpeciesReference id="MAPKppMAPKPH" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="MAPKPH" stoichiometry="1"/>
+        <SpeciesReference id="MAPKpp" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+    <Reaction>
+      <Id>Reaction30</Id>
+      <Type>mass-action</Type>
+      <Rate>k10</Rate>
+      <Reactants>
+        <SpeciesReference id="MAPKppMAPKPH" stoichiometry="1"/>
+      </Reactants>
+      <Products>
+        <SpeciesReference id="MAPKp" stoichiometry="1"/>
+        <SpeciesReference id="MAPKPH" stoichiometry="1"/>
+      </Products>
+    </Reaction>
+  </ReactionsList>
+  <SpeciesList>
+    <Species>
+      <Id>MAPK</Id>
+      <InitialPopulation>40</InitialPopulation>
+    </Species>
+    <Species>
+      <Id>MAPKMEKpp</Id>
+      <InitialPopulation>0</InitialPopulation>
+    </Species>
+    <Species>
+      <Id>MAPKp</Id>
+      <InitialPopulation>0</InitialPopulation>
+    </Species>
+    <Species>
+      <Id>MAPKPH</Id>
+      <InitialPopulation>30</InitialPopulation>
+    </Species>
+    <Species>
+      <Id>MAPKpMAPKPH</Id>
+      <InitialPopulation>0</InitialPopulation>
+    </Species>
+    <Species>
+      <Id>MAPKpMEKpp</Id>
+      <InitialPopulation>0</InitialPopulation>
+    </Species>
+    <Species>
+      <Id>MAPKpp</Id>
+      <InitialPopulation>0</InitialPopulation>
+    </Species>
+    <Species>
+      <Id>MAPKppMAPKPH</Id>
+      <InitialPopulation>0</InitialPopulation>
+    </Species>
+    <Species>
+      <Id>MEK</Id>
+      <InitialPopulation>20</InitialPopulation>
+    </Species>
+    <Species>
+      <Id>MEKp</Id>
+      <InitialPopulation>0</InitialPopulation>
+    </Species>
+    <Species>
+      <Id>MEKPH</Id>
+      <InitialPopulation>20</InitialPopulation>
+    </Species>
+    <Species>
+      <Id>MEKpMEKPH</Id>
+      <InitialPopulation>0</InitialPopulation>
+    </Species>
+    <Species>
+      <Id>MEKpp</Id>
+      <InitialPopulation>0</InitialPopulation>
+    </Species>
+    <Species>
+      <Id>MEKppMEKPH</Id>
+      <InitialPopulation>0</InitialPopulation>
+    </Species>
+    <Species>
+      <Id>MEKpRAFp</Id>
+      <InitialPopulation>0</InitialPopulation>
+    </Species>
+    <Species>
+      <Id>MEKRAFp</Id>
+      <InitialPopulation>0</InitialPopulation>
+    </Species>
+    <Species>
+      <Id>RAF</Id>
+      <InitialPopulation>30</InitialPopulation>
+    </Species>
+    <Species>
+      <Id>RAFK</Id>
+      <InitialPopulation>20</InitialPopulation>
+    </Species>
+    <Species>
+      <Id>RAFp</Id>
+      <InitialPopulation>0</InitialPopulation>
+    </Species>
+    <Species>
+      <Id>RAFPH</Id>
+      <InitialPopulation>30</InitialPopulation>
+    </Species>
+    <Species>
+      <Id>RAFpRAFPH</Id>
+      <InitialPopulation>0</InitialPopulation>
+    </Species>
+    <Species>
+      <Id>RAFRAFK</Id>
+      <InitialPopulation>0</InitialPopulation>
+    </Species>
+  </SpeciesList>
+</Model>

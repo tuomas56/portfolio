@@ -1,0 +1,4 @@
+0x00000000 - 0x00400000 Kernel Code + Static Data
+0x00400000 - 0x01000000 Kernel Heap
+0x01000000 - 0x01010000 Process Stack
+

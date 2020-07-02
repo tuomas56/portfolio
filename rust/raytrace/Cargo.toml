@@ -1,0 +1,16 @@
+[package]
+name = "raytrace"
+version = "0.1.0"
+edition = "2018"
+authors = ["tuomas56 <pigworts2@gmail.com>"]
+
+[[bin]]
+name = "raytrace"
+path = "src/main.rs"
+
+[dependencies]
+image = "*"
+glam = "*"
+rand = "*"
+rayon = "*"
+glium = "0.25"

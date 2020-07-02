@@ -1,0 +1,33 @@
+[package]
+name = "os"
+version = "0.1.0"
+authors = ["tuomas56 <pigworts2@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+multiboot2 = "0.8"
+modular-bitfield = "0.6"
+
+[dependencies.serde]
+version = "1.0"
+default-features = false
+features = ["derive", "alloc"]
+
+[dependencies.goblin]
+version = "0.2"
+default-features = false
+features = ["elf32"]
+
+[dependencies.serde_json]
+version = "1.0"
+default-features = false
+features = ["alloc"]
+
+[features]
+trace = []
+
+[lib]
+crate-type = ["staticlib"]
+
+[profile.release]
+debug = true

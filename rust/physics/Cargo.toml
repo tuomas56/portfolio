@@ -1,0 +1,24 @@
+[package]
+name = "simple-physics"
+version = "0.1.0"
+authors = ["tuomas56 <pigworts2@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+glam = "0.8"
+rand = "0"
+aabb-quadtree = "0.2"
+smallvec = "0.6"
+euclid = "0.19"
+snowflake = "1.3"
+generational-arena = "0.2"
+
+[dependencies.pixelengine]
+path = "../pixelengine"
+optional = true
+
+[[example]]
+name = "simple"
+required-features = ["pixelengine"]

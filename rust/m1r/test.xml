@@ -1,0 +1,82 @@
+<Model>
+  <NumberOfReactions>4</NumberOfReactions>
+  <NumberOfSpecies>6</NumberOfSpecies>
+
+  <ReactionsList>
+     <Reaction>
+       <Id>R1</Id>
+       <Type>mass-action</Type>
+       <Rate>1.0</Rate> 
+       <Reactants>
+           <SpeciesReference id="A" stoichiometry="1"/>
+       </Reactants>
+       <Products>
+           <SpeciesReference id="X" stoichiometry="1"/>
+       </Products>
+     </Reaction>
+     <Reaction>
+       <Id>R2</Id>
+       <Type>mass-action</Type>
+       <Rate>1.0</Rate> 
+       <Reactants>
+           <SpeciesReference id="X" stoichiometry="2"/>
+           <SpeciesReference id="Y" stoichiometry="1"/>
+       </Reactants>
+       <Products>
+           <SpeciesReference id="X" stoichiometry="3"/>
+       </Products>
+     </Reaction>
+     <Reaction>
+       <Id>R3</Id>
+       <Type>mass-action</Type>
+       <Rate>1.0</Rate> 
+       <Reactants>
+           <SpeciesReference id="X" stoichiometry="1"/>
+           <SpeciesReference id="B" stoichiometry="1"/>
+       </Reactants>
+       <Products>
+           <SpeciesReference id="Y" stoichiometry="1"/>
+           <SpeciesReference id="D" stoichiometry="1"/>
+       </Products>
+     </Reaction>
+     <Reaction>
+       <Id>R4</Id>
+       <Type>mass-action</Type>
+       <Rate>1.0</Rate> 
+       <Reactants>
+           <SpeciesReference id="X" stoichiometry="1"/>
+       </Reactants>
+       <Products>
+           <SpeciesReference id="E" stoichiometry="1"/>
+       </Products>
+     </Reaction>
+  </ReactionsList>
+
+  <SpeciesList>
+     <Species>
+       <Id>A</Id>
+       <InitialPopulation>100</InitialPopulation>
+    </Species>
+    <Species>
+       <Id>B</Id>
+       <InitialPopulation>170</InitialPopulation>
+    </Species>
+    <Species>
+       <Id>D</Id>
+       <InitialPopulation>0</InitialPopulation>
+    </Species>
+    <Species>
+       <Id>E</Id>
+       <InitialPopulation>0</InitialPopulation>
+    </Species>
+    <Species>
+       <Id>X</Id>
+       <InitialPopulation>100</InitialPopulation>
+    </Species>
+    <Species>
+       <Id>Y</Id>
+       <InitialPopulation>100</InitialPopulation>
+    </Species>
+  </SpeciesList>
+
+</Model>

@@ -1,0 +1,16 @@
+{
+	"manifest_version": 2,
+
+	"name": "Ficsave Plugin",
+	"description": "This extension allows you to download fanfics using Ficsave.",
+	"version": "0.1.0",
+
+	"browser_action": {
+		"default_icon": "icon.png",
+		"default_popup": "popup.html"
+	},
+	"permissions": [
+		"activeTab",
+		"tabs"
+	]
+}

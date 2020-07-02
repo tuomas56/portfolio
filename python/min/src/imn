@@ -1,0 +1,37 @@
+#!/usr/bin/env python3
+
+from argparse import ArgumentParser
+from min.compiler import compile
+from min.interpreter import run
+from min.runtime import prelude
+from min.objspace import MinValue
+import sys
+import logging
+import blessed
+
+def getmultiline(prompt, cont):
+    inp = input(prompt)
+    if inp == "":
+        return ""
+    else: 
+        return inp + '\n' + getmultiline(cont, cont)
+
+def main(argv):
+    parser = ArgumentParser()
+    parser.add_argument('-l', '--log', choices=('critical', 'error', 'warning', 'info', 'debug'), 
+                                       default='warning', help='the output log level.')
+    args = parser.parse_args(argv[1:])
+    term = blessed.Terminal()
+    fmtstr = "    {t.green}[%(asctime)s | %(levelname)7s] {t.blue}%(name)27s{t.normal} - %(message)s".format(t=term)
+    datefmt = "%H:%M:%S"
+    logging.basicConfig(level=getattr(logging, args.log.upper()),
+                        format=fmtstr, datefmt=datefmt)
+    while True:
+        ast = compile(getmultiline(">>> ", "... "))     
+        val = run(ast, prelude)
+        if val != MinValue.Nothing():
+            print(val)
+    return 0
+
+if __name__ == "__main__":
+    sys.exit(main(sys.argv))

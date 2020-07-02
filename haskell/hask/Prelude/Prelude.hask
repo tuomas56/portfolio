@@ -1,0 +1,9 @@
+head (x:_) = x
+tail (_:x) = x
+for l func = case l of {
+    [] -> []
+    (x:xs) -> (:) (func x) (for xs func)
+}
+($) a b = a b
+id a = a
+flip a b c = a c b

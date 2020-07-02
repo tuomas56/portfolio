@@ -1,0 +1,24 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch with GDB",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "iso/boot/kernel.bin",
+            "cwd": "${workspaceRoot}",
+            "stopAtEntry": true,
+            "MIMode": "gdb",
+            "miDebuggerPath": "/usr/local/bin/gdb",
+            "miDebuggerServerAddress": "localhost:1234",
+            "preLaunchTask": "Start QEMU",
+            "setupCommands": [{
+                "text": "symbol-file \"/users/tuomas/desktop/languages/rust/os2/output/kernel.sym\"",
+                "description": ""
+            }]
+        },
+    ]
+}
