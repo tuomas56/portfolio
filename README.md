@@ -10,18 +10,26 @@
 
 ## Python (Other)
 
-![](images/pyre_python.png) Pyre, a interpreted expression-oriented language with Python interoperability. [Code](https://github.com/tuomas56/pyre)
+![](images/pyre_python.png)
 
-![](images/min_python.png) Min, a prototype compiler for a systems language. [Code](python/min)
+Pyre, a interpreted expression-oriented language with Python interoperability. [Code](https://github.com/tuomas56/pyre)
 
-![](images/proof_python.png) A program to automatically produce proofs for a class of exponential identities. [Code](python/exponentials)
+![](images/min_python.png)
+
+Min, a prototype compiler for a systems language. [Code](python/min)
+
+![](images/proof_python.png)
+
+A program to automatically produce proofs for a class of exponential identities. [Code](python/exponentials)
 
 ## Haskell
 
 ![](images/cas_haskell.mov.gif)
+
 AME, a computer algebra system designed for A-level students with a natural language input. [Code](haskell/ame)
 
 ![](images/hask_haskell.png)
+
 An interpreter for an dynamically typed functional language with similar syntax to Haskell. [Code](haskell/hask)
 
 ## Rust
@@ -41,9 +49,11 @@ A program that runs chemical simulations using Gillespie's direct method, accele
 A port of Processing to Rust, and a prototype editor with physics support. Uses ECS architecture and a custom GUI library. The physics system uses a quadtree for efficient collisions. Code: [Engine](rust/pixelengine), [Editor](rust/geditor), [Physics](rust/physics), [Sample Game](rust/platformer)
 
 ![](images/raytrace_rust.png)
+
 A parallel raytracer supporting environment maps, shadows, emissive objects and diffuse, glossy and reflective materials. [Code](rust/raytracer)
 
 ![](images/rns_rust.mov.gif)
+
 An implementation of the quadratic sieve algorithm for integer factorization. Has been used to successfully factor 60-digit integers. [Code](rust/primes)
 
 ## JavaScript
