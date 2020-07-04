@@ -56,6 +56,10 @@ A parallel raytracer supporting environment maps, shadows, emissive objects and 
 
 An implementation of the quadratic sieve algorithm for integer factorization. Has been used to successfully factor 60-digit integers. [Code](rust/primes)
 
+![](images/planets_rust.mov.gif)
+
+A program to generate and render planets in OpenGL using perlin noise.
+
 ## JavaScript
 
 ![](images/papers_js.png)
